@@ -1,6 +1,13 @@
 import 'dart:io';
 
 void main(List<String> args) {
+  /* Elabore un programa en dart para generar la plantilla de un empleado. Para ello 
+  se dispone de sus horas laboradas en el mes, asì como de la tarifa por hora.
+  Determinar cuanto es el salario total del empleado y determinar  si aplica al descuento
+  de renta (%10) en funcion del salario total del empleado. Evaluar si el salario
+  excede de $500 aplicar el descuento de renta y mostrar en pantalla el total del descuento
+  y el nuevo salario, Si el salario es inferior o igual a $500 mostrar en pantalla su salario
+  sin descuento */
   var horas;
   var pagoxhora;
   double salario;
