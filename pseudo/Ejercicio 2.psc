@@ -3,20 +3,26 @@ Algoritmo BrandonMejiaDSW13
 //utiliza un vector par almecenar los sueldos y realizar las operaciones a partir de los datos en el 
 //vector.
 
-Definir N, sueldo, promedio,T Como Real;
-Escribir "Introduzca la cantidad de empleados"
-Leer N;
-i = 1;
-Dimension Trabajadores[i];
+Definir i,acum, promedio Como Real;
+acum = 0;
 C = 0;
+Escribir "Introduzca la cantidad de empleados"
+Leer n;
+Dimension arreglo[n];
 
-Mientras C<N
-	C=C+1;
+
+Para i <-1 hasta n Con Paso 1 Hacer
+	C=C+1
 	Escribir "Escriba el sueldo del empleado N-",C;
-	Leer Trabajadores[i];
-	
-FinMientras
+	Leer v;
+	arreglo[i]<-v;
+Fin Para
 
+Para j<-1 hasta n Con Paso 1 Hacer
+	acum <- acum + arreglo[j];
+FinPara
+
+promedio = acum / n;
 Escribir "El promedio es de : $",promedio;
 
 FinAlgoritmo
